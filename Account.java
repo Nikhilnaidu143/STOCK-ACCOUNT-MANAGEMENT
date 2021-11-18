@@ -3,7 +3,7 @@ package com.Stock_Account_Management;
 import java.util.Scanner;
 
 public class Account {
-
+	// taking user inputs
 	static Scanner input = new Scanner(System.in);
 	
 	int Account_balance = 0;

@@ -6,7 +6,8 @@ import java.util.Scanner;
 public class Stock {
 	
 	static Scanner input = new Scanner(System.in);
-    static ArrayList<StockPortfolio> stocks = new ArrayList<StockPortfolio>();  // creating array list
+	//creating array list
+ 	static ArrayList<StockPortfolio> stocks = new ArrayList<StockPortfolio>();  // creating array list
     
     // getter and setter methods for arraylist
 	public static ArrayList<StockPortfolio> getStocks() {
