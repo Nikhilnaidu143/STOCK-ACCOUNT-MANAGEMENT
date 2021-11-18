@@ -69,8 +69,14 @@ public class Stock {
 	public static void main(String[] args) {
 		System.out.println("------------WELCOME TO STOCK ACCOUNT MANAGEMENT--------------");
 		
-		Stock object = new Stock();
-		object.enterNumOfStocks();
-		object.displayStocks();
+		// creating object for stock class
+		//Stock object = new Stock();
+		//object.enterNumOfStocks();
+		//object.displayStocks();
+		
+		//creating object for Account class to test debit and credit methods.
+		Account AccountTest = new Account();
+		AccountTest.credit();
+		AccountTest.debit();
 	}
 }

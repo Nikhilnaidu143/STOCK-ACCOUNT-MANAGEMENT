@@ -16,6 +16,7 @@ public class StockPortfolio {
 		this.val_of_stock = val_of_stock;
 	}
 
+	// getters and setters methods
 	public String getStock_name() {
 		return stock_name;
 	}
@@ -49,7 +50,7 @@ public class StockPortfolio {
 	}
 
 	
-	// overriding toString method to return in required format
+	// overriding toString method to return in user friendly format.
 	@Override
 	public String toString() {
 		return ("Stock name :- " + getStock_name() + " and number of shares :- " + getNum_of_shares() + "\n"
