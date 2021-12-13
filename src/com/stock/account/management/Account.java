@@ -3,14 +3,12 @@ package com.stock.account.management;
 import java.util.Scanner;
 
 public class Account {
-	// taking user inputs
 	static Scanner input = new Scanner(System.in);
 
-	int Account_balance = 0;
+	static int Account_balance = 0;
 
-	public void debit() {
-		System.out.println("Enter how much you want to debit :- ");
-		int debit_balance = input.nextInt();
+	// debit method
+	public static void debit(double debit_balance) {
 
 		if (debit_balance <= Account_balance) {
 			Account_balance -= debit_balance;
@@ -20,13 +18,20 @@ public class Account {
 		}
 	}
 
-	public void credit() {
-
-		System.out.println("Enter how much you wantt credit :- ");
-		int credit_balance = input.nextInt();
+	// credit method
+	public static void credit(double credit_balance) {
 
 		Account_balance += credit_balance;
 		System.out.println("\n Your total account balance :- " + Account_balance);
 
+	}
+
+	public static int getAccount_balance() {
+		System.out.println("Account balance :- " + Account_balance);
+		return Account_balance;
+	}
+
+	public static void setAccount_balance(int account_balance) {
+		Account_balance = account_balance;
 	}
 }

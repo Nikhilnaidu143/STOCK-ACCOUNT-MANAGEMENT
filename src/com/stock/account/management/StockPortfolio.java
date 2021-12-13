@@ -1,6 +1,7 @@
 package com.stock.account.management;
 
 public class StockPortfolio {
+
 	// instance variables
 	String stock_name;
 	int num_of_shares;
