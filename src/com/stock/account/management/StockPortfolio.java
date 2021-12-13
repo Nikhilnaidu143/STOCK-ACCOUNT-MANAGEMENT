@@ -8,7 +8,7 @@ public class StockPortfolio {
 
 	int val_of_stock;
 
-	// constructor
+	// parameterised constructor
 	public StockPortfolio(String stock_name, int num_of_shares, int share_price, int val_of_stock) {
 		this.stock_name = stock_name;
 		this.num_of_shares = num_of_shares;
@@ -16,6 +16,7 @@ public class StockPortfolio {
 		this.val_of_stock = val_of_stock;
 	}
 
+	// getters and setters methods
 	public String getStock_name() {
 		return stock_name;
 	}
@@ -48,7 +49,7 @@ public class StockPortfolio {
 		this.val_of_stock = val_of_stock;
 	}
 
-	// overriding toString method to return in required format
+	// overriding toString method to return in user friendly format.
 	@Override
 	public String toString() {
 		return ("Stock name :- " + getStock_name() + " and number of shares :- " + getNum_of_shares() + "\n"
